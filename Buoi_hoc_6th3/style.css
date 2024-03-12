@@ -1,0 +1,20 @@
+img {
+  background-repeat: repeat-x;
+}
+
+/*reset css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.test-div {
+  width: 50%;
+  height: 100px;
+}
+
+body {
+  background-image: url("https://nupet.vn/wp-content/uploads/2023/10/ngo-nghinh-anh-meo-cute-nupet-2.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}

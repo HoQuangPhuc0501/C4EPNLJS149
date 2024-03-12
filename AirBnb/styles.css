@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.login-form-title {
+  margin-bottom: 5px;
+}
+
+#div_login form div {
+  margin-bottom: 5px;
+}
+
+#div_login {
+  border: 1px solid black;
+  width: 50%;
+  padding: 20px;
+}
+
+.login-form-p-tag {
+  color: #c1c2c2;
+}
+
+#div_login input {
+  width: 100%;
+  border-color: #c1c2c2;
+  padding: 5px 0 5px 5px;
+}
+
+#div_login button {
+  border: none;
+  background-color: #ef3f5e;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
+}
+
+#div_login form {
+  border-bottom: 1px solid black;
+}
+
+.login-form-title {
+  margin-bottom: 5px;
+}
+
+#div_register form div {
+  margin-bottom: 5px;
+}
+
+#div_register {
+  border: 1px solid black;
+  width: 50%;
+  padding: 20px;
+}
+
+.register-form-p-tag {
+  color: #c1c2c2;
+  margin: 10px 0 10px 0;
+}
+
+#div_register input {
+  width: 100%;
+  border-color: #c1c2c2;
+  padding: 5px 0 5px 5px;
+}
+
+#div_register button {
+  border: none;
+  background-color: #ef3f5e;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
+}
+
+#div_register form {
+  border-bottom: 1px solid black;
+}
+
+.div-room-list-item {
+  width: 33%;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.div-room-img {
+  width: 100%;
+  height: 100%;
+}
+
+.div-room-img-slide {
+  position: relative;
+  height: 70%;
+}
+
+.div-room-info {
+  margin-left: 10px;
+  height: 30%;
+}
+
+.img-room-img-slide-next {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  bottom: 40%;
+  width: 30px;
+  height: 30px;
+}
+
+.button-room-img-slide-list {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.img-select-image-by-index {
+  width: 10px;
+  height: 10px;
+}
+
+.button-room-img-slide-list a {
+  display: inline-block;
+}
+.p-room-location-ratting {
+  display: flex;
+  justify-content: space-between;
+}
+.p-room-location,
+.p-room-ratting {
+  margin-top: 10px;
+}
+
+.p-available-time {
+  color: #c1c2c2;
+  margin: 5px 0 5px 0;
+}
+
+.p-room-ratting {
+  margin-right: 10px;
+}

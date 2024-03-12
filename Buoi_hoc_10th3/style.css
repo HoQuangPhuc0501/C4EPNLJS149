@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.div-1 {
+  margin: 10px;
+  border: 1px solid blue;
+  padding: 24px;
+}
+.div-2 {
+  margin: 10px;
+  border: 1px solid red;
+  border-width: 1px;
+  padding: 24px;
+}
+
+#header {
+  background-color: aqua;
+  padding: 50px 10px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+h1 {
+  margin-top: 120px;
+}
+
+.div-cha {
+  position: relative;
+  background-color: red;
+  height: 100px;
+}
+
+.div-con {
+  background-color: blue;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
