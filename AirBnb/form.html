@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      #form-container {
+        width: 50%;
+        height: 50vh;
+        margin: auto;
+        margin-top: 25vh;
+        padding: 25px;
+      }
+      .form-email-name {
+        margin-top: 10px;
+      }
+      #form-contact {
+      }
+      .form-email-name {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+      }
+      #form-title {
+        height: 20%;
+      }
+      button {
+        margin-left: 40%;
+        margin-right: 40%;
+        width: 20%;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="form-container">
+      <h2 id="form-title">GET IN TOUCH</h2>
+      <form id="form-contact">
+        <div class="form-email-name">
+          <div class="form-name">
+            <label for="name">Tell us your name</label>
+            <input id="name" placeholder="Enter your name" />
+          </div>
+          <div class="form-email">
+            <label for="email">Enter your name</label>
+            <input id="email" placeholder="Enter your email" />
+          </div>
+        </div>
+        <div class="form-your-website">
+          <label for="name">Your website</label>
+          <input id="input-name" placeholder="https://" />
+        </div>
+        <div class="form-message">
+          <label for="name">Message</label>
+          <input id="input-name" placeholder="Your message here" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

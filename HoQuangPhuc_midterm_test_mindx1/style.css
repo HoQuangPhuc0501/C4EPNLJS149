@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #43baa3, #76d08b);
+}
+#form-container {
+  width: 50%;
+  height: 70vh;
+  margin: auto;
+  margin-top: 15vh;
+  background-color: white;
+  position: relative;
+}
+.form-email-name {
+  margin-top: 10px;
+}
+
+#form_brand_name {
+  color: #68cf8e;
+  font-size: 30px;
+  padding-top: 15px;
+  margin-right: 15px;
+  height: 10%;
+}
+
+#form_infor {
+  margin-left: 15%;
+  width: 70%;
+  height: 80%;
+  position: absolute;
+}
+.form-email-name {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+#form_title {
+  height: 10%;
+  margin-left: 15%;
+  color: #cce3ba;
+}
+#form_brand_name {
+  text-align: right;
+}
+button {
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+}
+
+#form_side_bar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -5%;
+  height: 110%;
+  width: 10%;
+  margin-left: 3%;
+  background-color: #7ed386;
+}
+
+.form_side_bar-icon-container {
+  height: 20%;
+  text-align: center;
+}
+
+.form_side_bar-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 70%;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #cce3ba;
+  padding-left: 0;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  font-size: 10px;
+}
+
+.form_infor-input {
+  height: 20%;
+  position: relative;
+}
+
+.btn-update {
+  right: 0;
+  position: absolute;
+  width: 15%;
+  margin: 0;
+  top: 37%;
+  border: none;
+  font-size: 15px;
+  color: #7ed386;
+  padding: auto 3px;
+  cursor: pointer;
+}
+
+#button_price_tag {
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  bottom: 20%;
+  right: -3.3%;
+  width: 100px;
+  height: 50px;
+  background-color: #7ed386;
+  border: none;
+  font-size: 20px;
+  rotate: -90deg;
+  color: white;
+  cursor: pointer;
+}
+
+#button_price_tag:hover {
+  rotate: -0deg;
+  background-color: #3fb6a8;
+  transition-delay: 0.3s, 250ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+}

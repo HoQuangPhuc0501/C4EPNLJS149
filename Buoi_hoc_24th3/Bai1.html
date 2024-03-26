@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let isContinue = true;
+        do 
+        {   
+            let input = Number.parseInt(prompt("Nhập năm cần kiểm tra năm nhuận:"));
+            if (typeof input === "number") 
+            {
+                if(((input % 4 == 0) 
+                        && (input % 100 !== 0))
+                    || (input % 400 == 0))
+                {
+                    alert(`Năm ${input} là năm nhuận`);
+                }
+                else 
+                {
+                    alert(`Năm ${input} không phải năm nhuận`);
+                }
+            }
+            else 
+            {
+                alert("Dữ liệu nhập không phải là số. Không thể kiểm tra.");
+                
+            } 
+            isContinue = (prompt("Bạn có muốn kiểm tra lại không? (có/không):").toLowerCase() === "có")
+                ? true 
+                : false;
+        }
+        while(isContinue);    
+        document.write("Chương trình đã bị dừng. Cảm ơn bạn");  
+    </script>
+  </body>
+</html>

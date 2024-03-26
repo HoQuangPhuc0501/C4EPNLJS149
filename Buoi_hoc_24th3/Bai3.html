@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function IsNumber(thamso)
+        {
+            return (typeof Number.parseInt(thamso) === "number");
+        }
+        function GetInput(thamso)
+        {
+            prompt("Nhập tham số :")
+            return String.name;
+        }
+        
+        do 
+        {   
+            let a, b, c, delta, x1, x2;
+            let isContinue = true;
+            do
+            {
+                a = prompt("Nhập tham số a:");
+                if(IsNumber(a) === false)
+                {
+                    alert("Tham số nhập bị sai. Vui lòng nhập lại!");
+                }
+            }
+            while(IsNumber(a) === false);
+            do
+            {
+                b = prompt("Nhập tham số b:");
+                console.log(IsNumber(b));
+                if(IsNumber(b) === false)
+                {
+                    alert("Tham số nhập bị sai. Vui lòng nhập lại!");
+                }
+            }
+            while(IsNumber(b) === false);
+            do
+            {
+                c = prompt("Nhập tham số c:");
+                console.log(IsNumber(c));
+                if(IsNumber(c) === false)
+                {
+                    alert("Tham số nhập bị sai. Vui lòng nhập lại!");
+                }
+            }
+            while(IsNumber(c) === false);
+            
+            delta = b*b - 4*a*c;
+            console.log(delta)
+            if(delta > 0)
+            {
+                x1 = (-b + Math.sqrt(delta)) / (2*a);
+                x2 = (-b - Math.sqrt(delta)) / (2*a);
+                alert(`Phương trình 2 nghiệm x1 = ${x1} và x2 = ${x2}`);
+            }
+            else if(delta == 0)
+            {
+                x1 = -b / (2*a);
+                alert(`Phương trình nghiệm kép ${x1}`);
+            }
+            else
+            {
+                alert("Phương trình vô nghiệm");
+            }
+
+            isContinue = (prompt("Bạn có muốn chạy lại? (có/không):").toLowerCase() === "có")
+                ? true 
+                : false;
+        }
+        while(isContinue);  
+    </script>
+</body>
+</html>

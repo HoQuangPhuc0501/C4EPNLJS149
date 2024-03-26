@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ISNumber(goc)
+        {
+            return (typeof goc === "number");
+        }
+        function ISTriangle(gocA, gocB, gocC) 
+        {
+            return (gocA + gocB + gocC <= 180);
+        }
+        function ISRightTriangle(gocA, gocB, gocC)
+        {
+            return (gocA === 90 || gocB === 90 || gocC === 90);
+        }
+        function ISEquilateralTriangle(gocA, gocB, gocC)
+        {
+            return (gocA === 60 && gocB === 60 && gocC === 60);
+        }
+        function ISObtuseAngularTriangle(gocA, gocB, gocC)
+        {
+            return (gocA > 90 || gocB > 90 || gocC > 90);
+        }
+
+        let canhA, canhB, canhC;
+        gocA = 60;
+        gocB = 90;
+        gocC = 30;
+        if(ISNumber(gocA) 
+            && ISNumber(gocB) 
+            && ISNumber(gocC))
+        {
+            if(ISTriangle(gocA, gocB, gocC))
+            {
+                if(ISEquilateralTriangle(gocA, gocB, gocC))
+                {
+                    alert("Đây là tam giác đều.");
+                }
+                else if(ISRightTriangle(gocA, gocB, gocC))
+                {
+                    alert("Đây là tam giác vuông.");
+                }
+                else if(ISObtuseAngularTriangle(gocA, gocB, gocC))
+                {
+                    alert("Đây là tam giác tù.");
+                }
+            }
+            else
+            {
+                alert("Đây không phải là tam giác");
+            }
+        }
+        else
+        {
+            alert("Thông số góc không hợp lệ");
+        }
+
+    </script>
+</body>
+</html>
